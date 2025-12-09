@@ -1,0 +1,33 @@
+{
+  "title": "Experiència",
+  "icon": "bi bi-briefcase",
+  "list": [{
+      "position": "Pràctiques",
+      "dates": "2025 - Actualitat",
+      "url": "https://isardvdi.com/",
+      "company": "IsardVDI",
+      "details": [
+        "Instal·lació, configuració i manteniment del sistema.",
+        "Administració de xarxes.",
+        "Implantació de serveis d'Internet.",
+        "Seguretat del sistema i de les dades.",
+        "Documentació del sistema."
+      ]
+    },
+    {
+      "position": "Pràctiques",
+      "dates": "2023 - 2024",
+      "url": "https://agora.xtec.cat/cfamontserratroig/",
+      "company": "CFA Montserrat Roig",
+      "details": [
+        "Assistent docent.",
+        "Instal·lació, configuració i actualització de hardware i software.",
+        "Documentació per usuaris i adminstració.",
+        "Implementació de xarxes.",
+        "Implementació d'aplicacions ofimàtiques i corporatives.",
+        "Manipulació, captura i edició d'imatges digitals i vídeo.",
+        "Implementació de gestors de continguts i portals d'e-learning."
+      ]
+    }
+  ]
+}

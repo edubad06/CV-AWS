@@ -1,0 +1,37 @@
+baseURL = "/"
+languageCode = "ca"
+title = "Currículum AWS Eduardo"
+theme = "aafu"
+
+[build]
+writeStats = true
+
+[params]
+author = "Eduardo Badoyan"
+description = "Currículum AWS - Cloud Resume Challenge"
+copyright = "powered by [hugo](https://gohugo.io/)"
+
+[params.theme]
+mainTheme = "dark"
+showAttribute = true
+singlePage = false
+
+[[params.accordion]]
+item = "about_me"
+expand = true
+
+[[params.accordion]]
+item = "experiences"
+
+[[params.accordion]]
+item = "education"
+
+[[params.accordion]]
+item = "projects"
+
+[[params.accordion]]
+item = "skills"
+panel_id = "skill-panel"
+
+[[params.accordion]]
+item = "hobbies"

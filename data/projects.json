@@ -1,0 +1,18 @@
+{
+  "title": "Projectes",
+  "icon": "bi bi-kanban",
+  "list": [
+    {
+      "title": "Projecte Control d'assistència amb Arduino",
+      "description": "Control d'assistència on un ESP32 amb lector RFID envia registres en temps real a AWS IoT Core i es emmagatzeman en una base de dades."
+    },
+    {
+      "title": "Projecte Aplicació web IAW",
+      "description": "Desenvolupa una aplicació web completa amb sistema d'autenticació, base de dades relacional i funcionalitats CRUD."
+    },
+    {
+      "title": "The Cloud Resume Challenge - AWS",
+      "description": "Construir un curriculum personal allotjat en el núvol fent ús de serveis de AWS (Route 53, Lambda, DynamoDB, etc.). "
+    }
+  ]
+}

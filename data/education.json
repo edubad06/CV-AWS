@@ -1,0 +1,16 @@
+{
+  "title": "Educació",
+  "icon": "bi bi-mortarboard",
+  "list": [
+    {
+      "degree": "CFGS ASIX",
+      "college": "Institut TIC de Barcelona",
+      "dates": "2024 - Actualitat"
+    },
+    {
+      "degree": "CFGM SMX",
+      "college": "Institut La Guineueta",
+      "dates": "2022 - 2024"
+    }
+  ]
+}

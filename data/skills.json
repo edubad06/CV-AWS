@@ -1,0 +1,27 @@
+{
+  "title": "Skills",
+  "panelId": "skill-panel",
+  "icon": "bi bi-list-check",
+  "list": [
+    {
+      "skill": "Bases de dades",
+      "skillrating": 85
+    },
+    {
+      "skill": "Xarxes",
+      "skillrating": 80
+    },
+    {
+      "skill": "OS/serveis web i virtualització",
+      "skillrating": 95
+    },
+    {
+      "skill": "Aplicacions Office",
+      "skillrating": 90
+    },
+    {
+      "skill": "Disseny de dades i programació",
+      "skillrating": 60
+    }
+  ]
+}

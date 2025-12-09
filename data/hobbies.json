@@ -1,0 +1,21 @@
+{
+  "title": "Hobbies",
+  "icon": "bi bi-controller",
+  "list": [
+    {
+      "hobby": "Escoltar música"
+    },
+    {
+      "hobby": "Jugar a videojocs"
+    },
+    {
+      "hobby": "Veure sèries"
+    },
+    {
+      "hobby": "Llegir llibres"
+    },
+    {
+      "hobby": "Futbol"
+    }
+  ]
+}
