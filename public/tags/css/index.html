@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ca" class="m-auto  dark "><head>
+<html lang="ca" class="m-auto  dark "><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
   <title>Css - Currículum AWS Eduardo</title>
   
@@ -27,14 +27,8 @@
 
   
   
+  <link href="/main.css" rel="stylesheet" />
   
-  <link
-    rel="stylesheet"
-    href="/main.min.0a9bfb4771f5c9f1dbde88a3ff7b966d70dd956878e50bfea2396aca9ec3359c.css"
-    integrity="sha256-Cpv7R3H1yfHb3oij/3uWbXDdlWh45Qv&#43;ojlqyp7DNZw="
-    crossorigin="anonymous"
-  />
-   
 
   <style>
      
@@ -190,7 +184,7 @@
   class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 dark:border-gray-300 justify-between"
 >
   <div>
-    <a class="nav-menu-item" href="/">Home</a>
+    <a class="nav-menu-item" href="//localhost:1313/">Home</a>
     <a class="nav-menu-item" href="/blog">Blog</a>
   </div>
   <div>
@@ -221,7 +215,7 @@
         onclick="expandAccordion(this)"
         class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
       ></i>
-      <a href="/blog/markdown_syntax/"
+      <a href="//localhost:1313/blog/markdown_syntax/"
         ><h2 class="accordion m-0">Demo Page</h2></a
       >
     </div>
@@ -313,7 +307,27 @@
   </p>
 
   
+
+  <p id="visitor-count" class="mt-2 text-blue-600 dark:text-yellow-300 font-semibold">
+    Cargando visitas...
+  </p>
+  <script>
+    async function updateVisitorCount() {
+      try {
+        const apiUrl = "";
+        const response = await fetch(apiUrl, { method: "GET" });
+        if (!response.ok) throw new Error("Error en la API");
+        const data = await response.json();
+        document.getElementById("visitor-count").innerText = `Visitas: ${data.count}`;
+      } catch (error) {
+        console.error("No s'ha pogut actualitzar el contador:", error);
+        document.getElementById("visitor-count").innerText = "Visites: ???";
+      }
+    }
+    updateVisitorCount();
+  </script>
 </footer>
+
 
     
   </body>

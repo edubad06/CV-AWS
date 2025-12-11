@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ca" class="m-auto  dark "><head>
+<html lang="en-us" class="m-auto  dark "><head>
   
-  <title>Categories - Currículum AWS Eduardo</title>
+  <title>Categories - aafu theme</title>
   
   <meta charset="UTF-8" />
   <meta
@@ -9,8 +9,8 @@
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
   />
   <meta name="theme-color" content="" />
-  <meta name="description" content="Currículum AWS - Cloud Resume Challenge" />
-  <meta name="author" content="Eduardo Badoyan" />
+  <meta name="description" content="Website title" />
+  <meta name="author" content="Darshan Baral" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link
     rel="stylesheet"
@@ -30,8 +30,8 @@
   
   <link
     rel="stylesheet"
-    href="/main.min.0a9bfb4771f5c9f1dbde88a3ff7b966d70dd956878e50bfea2396aca9ec3359c.css"
-    integrity="sha256-Cpv7R3H1yfHb3oij/3uWbXDdlWh45Qv&#43;ojlqyp7DNZw="
+    href="/main.min.861a47b7f38a5277b6aae39641e6d7aee0276e8765361fcbcb52e4cbfcf6f0b9.css"
+    integrity="sha256-hhpHt/OKUne2quOWQebXruAnbodlNh/Ly1Lky/z28Lk="
     crossorigin="anonymous"
   />
    
@@ -213,114 +213,6 @@
     Categories
   </h1>
   
-  <div class="">
-    <div
-      class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 active"
-    >
-      <i
-        onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-      ></i>
-      <a href="/categories/syntax/"
-        ><h2 class="accordion m-0">Syntax</h2></a
-      >
-    </div>
-    <div
-      id="panel-item-0"
-      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
-    >
-      <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">November 19, 2022</p>
-<p class="mt-1 mb-0 text-sm">Reading Time: 0 minutes</p>
- 
-
-
-
-
-</div>
-    </div>
-  </div>
-  
-  <div class="">
-    <div
-      class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 "
-    >
-      <i
-        onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-      ></i>
-      <a href="/categories/themes/"
-        ><h2 class="accordion m-0">Themes</h2></a
-      >
-    </div>
-    <div
-      id="panel-item-1"
-      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
-    >
-      <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">November 19, 2022</p>
-<p class="mt-1 mb-0 text-sm">Reading Time: 0 minutes</p>
- 
-
-
-
-
-</div>
-    </div>
-  </div>
-  
-  <div class="">
-    <div
-      class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 "
-    >
-      <i
-        onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-      ></i>
-      <a href="/categories/diam-aliqua/"
-        ><h2 class="accordion m-0">Diam Aliqua</h2></a
-      >
-    </div>
-    <div
-      id="panel-item-2"
-      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
-    >
-      <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">January 6, 2018</p>
-<p class="mt-1 mb-0 text-sm">Reading Time: 0 minutes</p>
- 
-
-
-
-
-</div>
-    </div>
-  </div>
-  
-  <div class="">
-    <div
-      class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 "
-    >
-      <i
-        onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-      ></i>
-      <a href="/categories/fringilla/"
-        ><h2 class="accordion m-0">Fringilla</h2></a
-      >
-    </div>
-    <div
-      id="panel-item-3"
-      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
-    >
-      <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">January 6, 2018</p>
-<p class="mt-1 mb-0 text-sm">Reading Time: 0 minutes</p>
- 
-
-
-
-
-</div>
-    </div>
-  </div>
-  
 </div>
 
 <div class="my-6 flex justify-center pagination-links">
@@ -344,7 +236,27 @@
   </p>
 
   
+
+  <p id="visitor-count" class="mt-2 text-blue-600 dark:text-yellow-300 font-semibold">
+    Cargando visitas...
+  </p>
+  <script>
+    async function updateVisitorCount() {
+      try {
+        const apiUrl = "";
+        const response = await fetch(apiUrl, { method: "GET" });
+        if (!response.ok) throw new Error("Error en la API");
+        const data = await response.json();
+        document.getElementById("visitor-count").innerText = `Visitas: ${data.count}`;
+      } catch (error) {
+        console.error("No s'ha pogut actualitzar el contador:", error);
+        document.getElementById("visitor-count").innerText = "Visites: ???";
+      }
+    }
+    updateVisitorCount();
+  </script>
 </footer>
+
 
     
   </body>

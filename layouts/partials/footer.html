@@ -1,0 +1,42 @@
+<footer class="text-sm text-center border-t border-gray-500 {{ if .IsHome }} bg-gray-200 dark:bg-dark rounded-b-lg py-2 {{ else }} py-6 {{ end }}">
+  <p class="markdownify">{{ .Site.Params.copyright | markdownify }}</p>
+  <p {{ if not .Site.Params.theme.showAttribute }}style="font-size:0px;"{{ end }}>
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+
+  {{ if .Site.Params.theme.singlePage }}
+  <i
+    class="bi bi-brightness-high theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="toggleTheme()"
+  ></i>
+  {{ partial "toggleTheme.html" . }}
+  {{ end }}
+
+  <p id="visitor-count" class="mt-2 text-blue-600 dark:text-yellow-300 font-semibold">
+    Cargando visitas...
+  </p>
+  <script>
+    async function updateVisitorCount() {
+      try {
+        const apiUrl = "";
+        const response = await fetch(apiUrl, { method: "GET" });
+        if (!response.ok) throw new Error("Error en la API");
+        const data = await response.json();
+        document.getElementById("visitor-count").innerText = `Visitas: ${data.count}`;
+      } catch (error) {
+        console.error("No s'ha pogut actualitzar el contador:", error);
+        document.getElementById("visitor-count").innerText = "Visites: ???";
+      }
+    }
+    updateVisitorCount();
+  </script>
+</footer>
+

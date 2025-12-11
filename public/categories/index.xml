@@ -1,40 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Currículum AWS Eduardo</title>
+    <title>Categories on aafu theme</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on Currículum AWS Eduardo</description>
+    <description>Recent content in Categories on aafu theme</description>
     <generator>Hugo</generator>
-    <language>ca</language>
-    <lastBuildDate>Sat, 19 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
     <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Syntax</title>
-      <link>/categories/syntax/</link>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>/categories/syntax/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Themes</title>
-      <link>/categories/themes/</link>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>/categories/themes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Diam Aliqua</title>
-      <link>/categories/diam-aliqua/</link>
-      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/categories/diam-aliqua/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Fringilla</title>
-      <link>/categories/fringilla/</link>
-      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/categories/fringilla/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
