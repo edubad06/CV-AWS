@@ -1,14 +1,14 @@
 baseURL: /
-languageCode: en-us
+languageCode: ca
 build:
   writeStats: true
-title: aafu theme
+title: Currículum AWS Eduardo
 # Uncomment below to use aafu as hugo theme. See instructions in README.md
 # theme: aafu
 
 params:
-  author: Darshan Baral
-  description: Website title
+  author: Eduardo Badoyan
+  description: Currículum AWS - Cloud Resume Challenge
   copyright: powered by [hugo](https://gohugo.io/)
   theme:
     mainTheme: dark

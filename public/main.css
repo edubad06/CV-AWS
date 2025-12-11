@@ -699,9 +699,6 @@
   .grid {
     display: grid !important;
   }
-  .table {
-    display: table !important;
-  }
   .h-full {
     height: 100% !important;
   }
