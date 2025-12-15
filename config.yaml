@@ -4,7 +4,7 @@ build:
   writeStats: true
 title: Currículum AWS Eduardo
 # Uncomment below to use aafu as hugo theme. See instructions in README.md
-# theme: aafu
+theme: aafu
 
 params:
   author: Eduardo Badoyan
