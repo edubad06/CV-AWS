@@ -1,4 +1,4 @@
-baseURL: /
+baseURL: "https://cv.aws10.asix2a25-26.cat/"
 languageCode: ca
 build:
   writeStats: true

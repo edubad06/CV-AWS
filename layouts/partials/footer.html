@@ -2,14 +2,10 @@
   <p class="markdownify">{{ .Site.Params.copyright | markdownify }}</p>
   <p {{ if not .Site.Params.theme.showAttribute }}style="font-size:0px;"{{ end }}>
     <i>
-      <a href="https://github.com/darshanbaral/aafu">
-        aafu
-      </a>
+      <a href="https://github.com/darshanbaral/aafu">aafu</a>
     </i>
     by
-    <a href="https://www.darshanbaral.com/">
-      darshan
-    </a>
+    <a href="https://www.darshanbaral.com/">darshan</a>
   </p>
 
   {{ if .Site.Params.theme.singlePage }}
@@ -23,20 +19,37 @@
   <p id="visitor-count" class="mt-2 text-blue-600 dark:text-yellow-300 font-semibold">
     Cargando visitas...
   </p>
+
+  <script src="/js/api_url.js"></script>
   <script>
-    async function updateVisitorCount() {
-      try {
-        const apiUrl = "";
-        const response = await fetch(apiUrl, { method: "GET" });
-        if (!response.ok) throw new Error("Error en la API");
-        const data = await response.json();
-        document.getElementById("visitor-count").innerText = `Visitas: ${data.count}`;
-      } catch (error) {
-        console.error("No s'ha pogut actualitzar el contador:", error);
-        document.getElementById("visitor-count").innerText = "Visites: ???";
-      }
-    }
-    updateVisitorCount();
+  	async function updateVisitorCount() {
+	const counterElement = document.getElementById("visitor-count");
+    	try {
+      	// Usamos 'default' como ID, que coincide con el de la Lambda
+      	const cvId = "default";
+      
+      	// Verificamos que la URL se haya cargado bien desde el fichero generado
+      	if (typeof window.API_URL === 'undefined') {
+        	console.error("Error: window.API_URL no está definido. Revisa amplify.tf postBuild.");
+        	counterElement.innerText = "Error config";
+        	return;
+      	}
+      	// Hacemos la petición (Fíjate en las comillas invertidas ` y el ?cv_id=)
+      	const response = await fetch(`${window.API_URL}?cv_id=${cvId}`);
+      
+      	if (!response.ok) {
+        	throw new Error(`Error API: ${response.status}`);
+      	}
+      
+      	const data = await response.json();
+      	counterElement.innerText = `Visites: ${data.visits}`;
+      
+    	} catch (error) {
+      	console.error("Error obteniendo visitas:", error);
+      	counterElement.innerText = "Visites: ...";
+    	}
+  	}
+  	// Ejecutar cuando cargue la web
+  	document.addEventListener("DOMContentLoaded", updateVisitorCount);
   </script>
 </footer>
-
