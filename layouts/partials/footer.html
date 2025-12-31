@@ -17,7 +17,7 @@
   {{ end }}
 
   <p id="visitor-count" class="mt-2 text-blue-600 dark:text-yellow-300 font-semibold">
-    Cargando visitas...
+    Carregant visites...
   </p>
 
   <script src="/js/api_url.js"></script>
@@ -25,16 +25,12 @@
   	async function updateVisitorCount() {
 	const counterElement = document.getElementById("visitor-count");
     	try {
-      	// Usamos 'default' como ID, que coincide con el de la Lambda
       	const cvId = "default";
-      
-      	// Verificamos que la URL se haya cargado bien desde el fichero generado
       	if (typeof window.API_URL === 'undefined') {
-        	console.error("Error: window.API_URL no está definido. Revisa amplify.tf postBuild.");
+        	console.error("Error: window.API_URL no està definit.");
         	counterElement.innerText = "Error config";
         	return;
       	}
-      	// Hacemos la petición (Fíjate en las comillas invertidas ` y el ?cv_id=)
       	const response = await fetch(`${window.API_URL}?cv_id=${cvId}`);
       
       	if (!response.ok) {
@@ -45,11 +41,10 @@
       	counterElement.innerText = `Visites: ${data.visits}`;
       
     	} catch (error) {
-      	console.error("Error obteniendo visitas:", error);
+      	console.error("Error obtenint visites:", error);
       	counterElement.innerText = "Visites: ...";
     	}
   	}
-  	// Ejecutar cuando cargue la web
   	document.addEventListener("DOMContentLoaded", updateVisitorCount);
   </script>
 </footer>
