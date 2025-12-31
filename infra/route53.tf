@@ -3,8 +3,8 @@ resource "aws_route53_zone" "main" {
 }
 
 resource "aws_amplify_domain_association" "domain" {
-  app_id      = aws_amplify_app.cv_app.id
-  domain_name = var.domain_name
+  app_id                = aws_amplify_app.cv_app.id
+  domain_name           = var.domain_name
   wait_for_verification = true
 
   # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/amplify_domain_association

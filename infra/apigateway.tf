@@ -1,7 +1,7 @@
 resource "aws_apigatewayv2_api" "http_api" {
   name          = "visitor_counter_api"
   protocol_type = "HTTP"
-  
+
   cors_configuration {
     allow_origins = ["*"]
     allow_methods = ["GET", "POST", "OPTIONS"]
@@ -17,10 +17,10 @@ resource "aws_apigatewayv2_stage" "default" {
 }
 
 resource "aws_apigatewayv2_integration" "lambda_integration" {
-  api_id           = aws_apigatewayv2_api.http_api.id
-  integration_type = "AWS_PROXY"
-  integration_uri  = aws_lambda_function.visitor_counter.invoke_arn
-  integration_method = "POST"
+  api_id                 = aws_apigatewayv2_api.http_api.id
+  integration_type       = "AWS_PROXY"
+  integration_uri        = aws_lambda_function.visitor_counter.invoke_arn
+  integration_method     = "POST"
   payload_format_version = "2.0"
 }
 
