@@ -27,6 +27,10 @@ jobs:
         pip install boto3
         
     - name: Run Tests
+      env:
+        AWS_DEFAULT_REGION: "us-east-1"
+        AWS_ACCESS_KEY_ID: "dummy"
+        AWS_SECRET_ACCESS_KEY: "dummy"
       run: |
         cd infra/src
         python -m unittest test_lambda_function.py
