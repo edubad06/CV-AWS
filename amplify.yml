@@ -54,6 +54,12 @@ frontend:
         # Configure Git
         - echo "Configuring Git..."
         - git config core.quotepath false
+
+        # Configure API URL
+        - echo "Injecting API URL..."
+        - mkdir -p static/js
+        - echo "window.API_URL = '$API_URL';" > static/js/api_url.js
+        
     build:
       commands:
         - echo "Building site..."
