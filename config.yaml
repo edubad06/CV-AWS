@@ -19,7 +19,6 @@ params:
       expand: true # only the first `expand: true` will take effect
     - item: experiences
     - item: education
-    - item: publications
     - item: projects
     - item: skills
       panel_id: skill-panel
