@@ -7,7 +7,6 @@ resource "aws_amplify_domain_association" "domain" {
   domain_name           = var.domain_name
   wait_for_verification = true
 
-  # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/amplify_domain_association
   sub_domain {
     branch_name = aws_amplify_branch.main.branch_name
     prefix      = var.subdomain
