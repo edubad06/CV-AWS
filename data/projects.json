@@ -12,6 +12,7 @@
     },
     {
       "title": "The Cloud Resume Challenge - AWS",
+      "url": "https://cloudresumechallenge.dev/docs/the-challenge/aws/",
       "description": "Construir un curriculum personal allotjat en el núvol fent ús de serveis de AWS (Route 53, Lambda, DynamoDB, etc.). "
     }
   ]
